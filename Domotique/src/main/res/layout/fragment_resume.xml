@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".IHM.BlankFragment" android:background="@android:color/background_dark">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="0dp" android:baselineAligned="true">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/black"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/textTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="36sp" android:fontFamily="@font/audiowide"
+                        android:textColor="@android:color/darker_gray" tools:text="IN"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <ImageButton
+                            android:id="@+id/imageButton2"
+                            android:layout_width="36dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_thermometer"
+                            android:background="@android:color/transparent"
+                            android:layout_marginLeft="6dp"/>
+
+                    <TextView
+                            android:id="@+id/textIntTemp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="12dp"
+                            android:text="-"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="80sp" tools:text="23.3" android:fontFamily="@font/audiowide"/>
+                    <TextView
+                            android:text="C°"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight="1"
+                            tools:text="C°" android:textColor="@android:color/background_light" android:textSize="30sp"
+                            android:layout_marginLeft="7dp" android:fontFamily="@font/audiowide"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <ImageButton
+                            android:id="@+id/imageButton3"
+                            android:layout_width="36dp"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_hygrometer" android:layout_marginLeft="6dp"
+                            android:background="@android:color/transparent"/>
+
+                    <TextView
+                            android:id="@+id/textIntHum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-" android:textSize="80sp"
+                            android:textColor="#ff0099cc" tools:text="100.0" android:fontFamily="@font/audiowide"/>
+                    <TextView
+                            android:text="%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView4"
+                            android:layout_weight="1"
+                            tools:text="%"
+                            android:textSize="30sp"
+                            android:layout_marginLeft="7dp" android:textColor="#ff0099cc"
+                            android:fontFamily="@font/audiowide"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/black"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/textTitleOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="OUT"
+                        android:textAlignment="center"
+                        android:textSize="36sp" android:fontFamily="@font/audiowide"
+                        android:textColor="@android:color/darker_gray"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <ImageButton
+                            android:id="@+id/imageButton4"
+                            android:layout_width="36dp"
+                            android:layout_height="match_parent"
+                            android:contentDescription="TODO"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_thermometer"
+                            android:background="@android:color/transparent" android:layout_marginLeft="6dp"/>
+
+                    <TextView
+                            android:id="@+id/textExTemp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="12dp"
+                            android:text="-" android:textSize="80sp"
+                            android:textColor="@android:color/background_light" tools:text="-2.7"
+                            android:fontFamily="@font/audiowide"/>
+                    <TextView
+                            android:text="C°"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_weight="1"
+                            tools:text="C°" android:textColor="@android:color/background_light" android:textSize="30sp"
+                            android:layout_marginLeft="7dp" android:fontFamily="@font/audiowide"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <ImageButton
+                            android:id="@+id/imageButton5"
+                            android:layout_width="36dp"
+                            android:layout_height="match_parent"
+                            android:contentDescription="TODO"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_hygrometer" android:layout_marginLeft="6dp"
+                            android:background="@android:color/transparent"/>
+                    <TextView
+                            android:id="@+id/textExHum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-" android:textSize="80sp" android:textColor="#ff0099cc"
+                            tools:text="100.0" android:fontFamily="@font/audiowide"/>
+                    <TextView
+                            android:text="%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView5" android:layout_weight="1"
+                            tools:text="%" android:textSize="30sp"
+                            android:layout_marginLeft="7dp" android:textColor="#ff0099cc"
+                            android:fontFamily="@font/audiowide"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" android:gravity="end">
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_weight="2" android:layout_margin="3dp"
+                    android:background="@drawable/black">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:layout_editor_absoluteY="3dp"
+                        tools:layout_editor_absoluteX="964dp" android:layout_weight="2">
+                    <ImageButton
+                            android:id="@+id/imageButton"
+                            android:layout_width="36dp"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_pressure" android:layout_marginLeft="6dp"
+                            android:background="@android:color/transparent"/>
+                    <TextView
+                            android:id="@+id/textHum4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-" android:textSize="80sp"
+                            android:textColor="#9eaa0c" tools:text="100.0"
+                            android:layout_weight="1" android:fontFamily="@font/audiowide"/>
+                    <TextView
+                            android:text="mbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/textView9"
+                            android:layout_weight="3"
+                            tools:text="mbar"
+                            android:textSize="30sp"
+                            android:layout_marginLeft="7dp" android:textColor="#9eaa0c"
+                            android:fontFamily="@font/audiowide"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:layout_margin="3dp"
+                    android:background="@drawable/black">
+                <TextView
+                        android:text="Status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView8" tools:text="Status"
+                        android:textSize="30sp" android:textColor="@android:color/background_light"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp" android:layout_marginTop="6dp"
+                        android:fontFamily="@font/audiowide"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:background="@drawable/black"
+                    android:layout_margin="3dp">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textViewTime" android:textSize="50sp"
+                        tools:text="10:20:06" android:textColor="#feaa0c"
+                        android:layout_marginLeft="6dp" android:layout_marginRight="6dp"
+                        android:fontFamily="@font/audiowide"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textViewDate"
+                        tools:text="Dimanche 20 Janvier"
+                        android:textColor="#feaa0c" android:textSize="28sp"
+                        android:layout_marginBottom="6dp" android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp" android:fontFamily="@font/audiowide"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
