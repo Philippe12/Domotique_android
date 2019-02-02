@@ -1,0 +1,16 @@
+apply plugin: 'com.android.instantapp'
+
+dependencies {
+    implementation project(':Domotique')
+    implementation project(':base')
+}
+
+android {
+    defaultConfig {
+        minSdkVersion 26
+        targetSdkVersion 27
+    }
+    productFlavors {
+    }
+    compileSdkVersion 27
+}

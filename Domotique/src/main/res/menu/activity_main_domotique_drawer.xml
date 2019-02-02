@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/resume"
+                android:checked="true"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Général"/>
+        <item
+                android:id="@+id/statusliste"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Liste des piéces"/>
+    </group>
+    <group
+    >
+        <item android:title="Cofiguration des piéces" android:id="@+id/confrom"/>
+    </group>
+</menu>
