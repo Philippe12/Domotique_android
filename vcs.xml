@@ -10,6 +10,10 @@
           <option name="url" value="http://rdi-sources.environnement.local" />
           <option name="userName" value="pfolinux" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://development.envea.global" />
+          <option name="userName" value="pfolinux" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/Developpement/Android" />
