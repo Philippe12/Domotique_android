@@ -1,9 +1,9 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="Project 'esaconnect_android'" />
-    <option name="defaultScopeName" value="Project 'esaconnect_android'" />
+    <option name="customScope" value="Project 'UPS Send SMS'" />
+    <option name="defaultScopeName" value="Project 'UPS Send SMS'" />
     <option name="regularExpressions" value="true" />
     <option name="REGULAR_EXPRESSIONS" value="true" />
-    <option name="SEARCH_SCOPE" value="Project 'esaconnect_android'" />
+    <option name="SEARCH_SCOPE" value="Project 'UPS Send SMS'" />
   </component>
 </application>
